@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Yummy/index</title>
+        <!-- W E B S I T E   I C O N -->
+        <link rel="website icon" href="../images/image_22.png" type="png" />
+        <!-- Bootstrap -->
+        <link rel="stylesheet"
+            href="../CSS/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css" />
+        <!-- fontawesome -->
+        <link rel="stylesheet" href="../Font awesome/CSS/all.min.css" />
+        <!-- css main file -->
+        <link rel="stylesheet" href="../CSS/style.css" />
+    </head>
+    <body>
+        <!-- S I D E   B A R  -->
+        <aside id="transferringNav" class="position-fixed top-0 bottom-0 d-flex
+            flex-column justify-content-between">
+            <div class="togler position-fixed top-0 bottom-0 d-flex
+                align-self-end flex-column justify-content-between text-center">
+                <img src="../images/image_22.png" alt="..." class="w-100">
+                <i class="fa-solid open-close-icon fa-2x fa-align-justify"></i>
+                <div>
+                    <i class="fa-solid fa-globe d-block"></i>
+                    <i class="fa-solid fa-share-nodes"></i>
+                </div>
+
+            </div>
+            <div class="p-4 text-light">
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="search.html" class="text-white
+                            text-decoration-none">Search</a>
+                    </li>
+                    <li>
+                        <a href="categories.html" class="text-white
+                            text-decoration-none">categories</a>
+                    </li>
+                    <li>
+                        <a href="areas.html" class="text-white
+                            text-decoration-none">Area</a>
+                    </li>
+                    <li>
+                        <a href="ingredients.html" class="text-white
+                            text-decoration-none">Ingredients</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="text-white
+                            text-decoration-none">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="socials text-light mx-auto">
+                <span class="fa-brands fa-facebook"></span>
+                <span class="fa-brands fa-twitter"></span>
+                <span class="fa-solid fa-globe"></span>
+                <p>Copyright Â© 2019 All Rights Reserved.</p>
+
+            </div>
+        </aside>
+
+        <section>
+            <div class="container my-5 py-5">
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <input type="text" class="my-2 form-control border
+                            border-1 border-light" placeholder="Enter Your Name"
+                            id="inName"/>
+                        <div id="nameError" class="error-mss d-none my-2 alert
+                            alert-danger">
+                            Special characters and numbers not allowed
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="email" class="my-2 form-control border
+                            border-1 border-light" placeholder="Enter Your Mail"
+                            id="inMail"/>
+                        <div id="mailError" class="error-mss d-none my-2 alert
+                            alert-danger">
+                            Email not valid *exemple@yyy.zzz
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="number" class="my-2 form-control border
+                            border-1 border-light" placeholder="Enter Your Phone" id="inPhone"/>
+                        <div id="phoneError" class="error-mss d-none my-2 alert
+                            alert-danger">
+                            Enter valid Phone Number
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="number" class="my-2 form-control border
+                            border-1 border-light" placeholder="Enter Your Age"
+                            id="inAge"/>
+                        <div id="ageError" class="error-mss d-none my-2 alert
+                            alert-danger">
+                            Enter valid age
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="password" class="my-2 form-control border
+                            border-1 border-light" placeholder="Enter Your Password" id="inPassword"/>
+                        <div id="passError" class="error-mss d-none my-2 alert
+                            alert-danger">
+                            Enter valid password *Minimum eight characters, at
+                            least one letter and one number:*
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="password" class="my-2 form-control border
+                            border-1 border-light" placeholder="Repassword"
+                            id="inRepassword"/>
+                        <div id="repassError" class="error-mss d-none my-2 alert
+                            alert-danger">
+                            Enter valid repassword
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center my-3">
+                        <button class="btn btn-outline-dange" id="submitBtn" disabled>Submit</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- script files -->
+        <script
+            src="../CSS/bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.min.js"></script>
+        <script src="../JS/jquery-3.6.3.min.js"></script>
+        <script src="../JS/contatct.js"></script>
+    </body>
+</html>

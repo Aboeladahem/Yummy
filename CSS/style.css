@@ -1,0 +1,52 @@
+/* ========= S T A N D A R D S ========== */
+:root{
+    --website-color: #0d0d0d;
+}
+#searchSection::placeholder {
+    color: white !important;
+}
+* {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--website-color);
+}
+.page-logo {
+    width: 70px;
+}
+aside {
+    z-index: 9999999;
+}
+aside span , .area , .item{
+    cursor: pointer;
+}
+.item .caption {
+    opacity: 0.7;
+    left: 0;
+    top: 100%;
+    transition: 0.6s;
+    padding-bottom: 1rem;
+}
+.item:hover .caption {
+    top: 0 ;
+}
+#transferringNav {
+    width: 300px;
+    z-index: 999999;
+    background-color: black;
+}
+.togler {
+    background-color: rgb(255, 255, 255);
+    width: 60px;
+    padding: 10px;
+    cursor: pointer;
+    padding-block: 1rem;
+}
+.socials {
+    max-width: 80%;
+}
+
+
