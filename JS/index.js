@@ -12,20 +12,20 @@ $(".togler i").click(function () {
 })
 let randomMeals = [];
 
-function getRequest(key, q = "") {
+function getRequest( q = "") {
   let url = new XMLHttpRequest();
-  url.open("GET", `https:themealdb.com/api/json/v1/1/search.php?${key}=${q}`);
+  url.open("GET", `https:themealdb.com/api/json/v1/1/search.php?s=${q}`);
   url.send();
   url.addEventListener("readystatechange", function () {
     if (url.readyState == 4) {
       randomMeals = JSON.parse(url.response).meals;
-      displayRandomMeals("defaultMeals");
+      displayRandomMeals();
     }
   });
 }
-getRequest("s");
+getRequest();
 
-function displayRandomMeals(id) {
+function displayRandomMeals() {
   let box = ``;
   for (let i = 0; i < randomMeals.length; i++) {
     box += `
@@ -42,5 +42,5 @@ function displayRandomMeals(id) {
                         </div>
                     </div>`;
   }
-  document.getElementById(id).innerHTML = box;
+  document.getElementById("defaultMeals").innerHTML = box;
 }
